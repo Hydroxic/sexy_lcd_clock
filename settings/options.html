@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      textarea {
+        width: 75%;
+        height: 200px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label>Clock formart</label>
+      <select name="clockFormat" id="clockFormat">
+        <option value="12">12 hour clock</option>
+        <option value="24">24 hour clock</option>
+      </select>
+      <br />
+      <label>Sound</label>
+      <select name="sound" id="sound"> 
+        <option value="enable">Enable</option>
+        <option value="disable">Disable</option>
+      </select>
+      <br />
+
+      <label for="customCss">Custom css</label>
+      <br />
+      <textarea
+        name="customCss"
+        id="customCss"
+        placeholder="put here your custom css to change the styles of the clock, remember to add a position propertie with fixed value to your clock do not goes away, when you scroll the mouse and set a hight value to z-index to work well across the sites"
+      >
+      </textarea>
+      <p>leave blank this field to restore the default style</p>
+
+      <button type="submit">Save</button>
+    </form>
+
+    <p>
+      After change this settings you need refresh the browser page(where the clock appears) to
+      settings take effect
+    </p>
+
+    <script src="options.js"></script>
+  </body>
+</html>
